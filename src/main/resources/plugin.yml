@@ -1,0 +1,15 @@
+name: PlahenAnarchyCore
+version: 1.0.0
+main: com.plahen.anarchy.PlahenAnarchyCore
+api-version: '1.21'
+author: Plahen
+description: Fair anarchy core with spawn protection, server info, and anti-lag limits.
+commands:
+  plahen:
+    description: Main Plahen anarchy command.
+    usage: /plahen <info|reload|setspawn>
+    aliases: [anarchy, pa]
+permissions:
+  plahen.admin:
+    description: Allows reloading config and changing protected spawn center.
+    default: op
