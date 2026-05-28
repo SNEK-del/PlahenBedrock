@@ -1,0 +1,49 @@
+server:
+  # Название можно поменять позже. Префикс уже используется во всех сообщениях плагина.
+  prefix: "&8[&cNoLaw&8]"
+  telegram: "https://t.me/nolawmc"
+  rule: "Читы запрещены. Всё остальное решают игроки."
+
+spawn:
+  protection-enabled: true
+  radius: 48
+  pvp-enabled: false
+  block-edit-enabled: false
+  explosion-enabled: false
+  set-center-from-world-spawn-on-first-run: true
+  world: ""
+  x: 0.5
+  y: 80.0
+  z: 0.5
+
+anti-lag:
+  # Лимиты на предметы, мобов и удаление выброшенных предметов специально убраны.
+  # Для анархии оставлены только защиты от лаг-машин, редстоуна, поршней, воронок и TNT.
+  hopper-limit-per-chunk: 64
+  redstone-events-per-chunk-per-second: 220
+  piston-events-per-chunk-per-second: 120
+  tnt-prime-limit-per-chunk: 48
+
+alerts:
+  enabled: true
+  prefix: "&8[&cNoLawAC&8]"
+  notify-operators: true
+  repeated-violations-reminder-every: 4
+
+  reach-check-enabled: true
+  reach-threshold: 3.35
+
+  cps-check-enabled: true
+  cps-threshold: 18
+
+  fly-check-enabled: true
+  fly-air-seconds: 7
+
+  speed-check-enabled: true
+  speed-threshold-blocks-per-second: 9.0
+
+  fast-place-check-enabled: true
+  fast-place-threshold-per-second: 12
+
+  fast-break-check-enabled: true
+  fast-break-threshold-per-second: 18
